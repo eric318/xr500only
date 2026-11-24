@@ -296,3 +296,64 @@ footer {
 .gallery-btn:hover {
   background-color: #b83b0a;
 }
+/* 2-Column Photo Grid & Specs Layout */
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.two-col-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.specs-section {
+  background-color: #262626;
+  border-radius: 4px;
+  padding: 28px;
+  margin-top: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.specs-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #ffffff;
+  border-bottom: 2px solid #d9480f;
+  padding-bottom: 10px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.spec-card h3 {
+  color: #ff7a33;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.spec-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #e0e0e0;
+  font-size: 0.94rem;
+}
+
+.spec-card li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+  .two-col-grid,
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+}
