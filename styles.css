@@ -218,3 +218,81 @@ footer {
 <footer>
   &copy;<script>document.write(new Date().getFullYear())</script> by XR500 Only
 </footer>
+/* Alternating Rows, Orange Bands & 3-Column Strip */
+.story-row.reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 700px) {
+  .story-row.reverse {
+    flex-direction: column;
+  }
+}
+
+.band-orange {
+  background-color: #d9480f;
+  padding: 32px 24px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.band-orange .story-block:last-child {
+  margin-bottom: 0;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.three-col-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.three-col-card p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .three-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Google Photos Gallery Section */
+.gallery-box {
+  background-color: #262626;
+  border-radius: 4px;
+  padding: 28px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.gallery-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.gallery-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 24px;
+  background-color: #d9480f;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.gallery-btn:hover {
+  background-color: #b83b0a;
+}
