@@ -183,3 +183,35 @@ footer {
   height: 100%;
   border: 0;
 }
+/* Side-by-Side Story Rows */
+.story-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.story-media {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.story-media img,
+.story-media .video-container {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.story-text {
+  flex: 1 1 50%;
+}
+
+@media (max-width: 700px) {
+  .story-row {
+    flex-direction: column;
+  }
+
+  .story-media,
+  .story-text {
+    width: 100%;
+  }
+}
