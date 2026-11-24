@@ -216,5 +216,5 @@ footer {
   }
 }
 <footer>
-  &copy;2026 by XR500 Only
+  &copy;<script>document.write(new Date().getFullYear())</script> by XR500 Only
 </footer>
