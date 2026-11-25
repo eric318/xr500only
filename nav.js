@@ -34,11 +34,11 @@
         <li><a href="hpf-monoshock.html">HPF monoshock</a></li>
         <li><a href="baja-250.html">Baja 250</a></li>
         <li><a href="cj-mugen.html">C&amp;J Mugen Baja Commander</a></li>
-        <li><a href="mikuni-38mm.html">Mikuni 38mm</a></li>
         <li><a href="xl500s-special.html">XL500S special</a></li>
         <li><a href="xr500-cj-mx.html">XR500 C&amp;J MX</a></li>
         <li><a href="xr500-big-bore-591cc.html">XR500 Big Bore 591cc</a></li>
-        
+        <li><a href="xr500r-1984-stock.html">XR500R 1984 stock</a></li>
+
         <li class="drawer-group">
           <button type="button" class="drawer-sub-toggle">
             <span>Restoration tips</span>
@@ -57,8 +57,8 @@
             <span class="sub-arrow">&#9662;</span>
           </button>
           <ul class="drawer-submenu">
+            <li><a href="mikuni-38mm.html">Mikuni 38mm</a></li>
             <li><a href="electric-start-conversion.html">Electric start conversion</a></li>
-            <li><a href="mod-2.html">Modification 2</a></li>
             <li><a href="mod-3.html">Modification 3</a></li>
             <li><a href="mod-4.html">Modification 4</a></li>
           </ul>
