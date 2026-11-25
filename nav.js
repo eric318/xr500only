@@ -45,7 +45,7 @@
             <span class="sub-arrow">&#9662;</span>
           </button>
           <ul class="drawer-submenu">
-            <li><a href="restoration-tip-1.html">Restoration Tip 1</a></li>
+            <li><a href="paint-plastic-gas-tank.html">Paint a plastic gas tank</a></li>
             <li><a href="restoration-tip-2.html">Restoration Tip 2</a></li>
             <li><a href="restoration-tip-3.html">Restoration Tip 3</a></li>
           </ul>
