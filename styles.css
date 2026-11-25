@@ -357,3 +357,161 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* Corner Hamburger Menu & Slide-Out Drawer */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-toggle-btn {
+  margin-left: auto;
+  background-color: #d9480f;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.menu-toggle-btn:hover {
+  background-color: #ff6b2b;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 999;
+}
+
+.nav-overlay.open {
+  display: block;
+}
+
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  border-left: 2px solid #d9480f;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: right 0.25s ease;
+  box-shadow: -6px 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-drawer.open {
+  right: 0;
+}
+
+.nav-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #333333;
+}
+
+.nav-drawer-title {
+  color: #ff7a33;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-close-btn {
+  background: none;
+  border: none;
+  color: #cccccc;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.nav-close-btn:hover {
+  color: #ffffff;
+}
+
+.nav-drawer-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 28px;
+}
+
+.nav-drawer-list li {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.nav-drawer-list a,
+.drawer-sub-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 0.96rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.nav-drawer-list a:hover,
+.drawer-sub-toggle:hover {
+  background-color: #2b2b2b;
+  color: #ff7a33;
+}
+
+.nav-drawer-list a.active,
+.drawer-sub-toggle.active {
+  color: #ff7a33;
+  font-weight: 700;
+  background-color: #26201d;
+}
+
+.drawer-submenu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+}
+
+.drawer-submenu.open {
+  display: block;
+}
+
+.drawer-submenu li {
+  border-bottom: none;
+}
+
+.drawer-submenu a {
+  padding: 10px 20px 10px 36px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
