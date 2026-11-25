@@ -46,7 +46,7 @@
           </button>
           <ul class="drawer-submenu">
             <li><a href="paint-plastic-gas-tank.html">Paint a plastic gas tank</a></li>
-            <li><a href="restoration-tip-2.html">Restoration Tip 2</a></li>
+            <li><a href="how-to-remove-rust.html">How to remove rust</a></li>
             <li><a href="restoration-tip-3.html">Restoration Tip 3</a></li>
           </ul>
         </li>
