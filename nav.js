@@ -38,7 +38,7 @@
         <li><a href="xl500s-special.html">XL500S special</a></li>
         <li><a href="xr500-cj-mx.html">XR500 C&amp;J MX</a></li>
         <li><a href="xr500-big-bore-591cc.html">XR500 Big Bore 591cc</a></li>
-        <li><a href="xr500r-1984-stock.html">XR500R 1984 stock</a></li>
+        <li><a href="electric-start-conversion.html">Electric start conversion</a></li>
 
         <li class="drawer-group">
           <button type="button" class="drawer-sub-toggle">
