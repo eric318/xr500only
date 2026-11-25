@@ -30,14 +30,24 @@
       <ul class="nav-drawer-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="how-it-all-began.html">How it all began</a></li>
-        <li><a href="unusual-1981.html">Unusual 1981 model</a></li>
-        <li><a href="hpf-monoshock.html">HPF monoshock</a></li>
+
+        <li class="drawer-group">
+          <button type="button" class="drawer-sub-toggle">
+            <span>Bikes</span>
+            <span class="sub-arrow">&#9662;</span>
+          </button>
+          <ul class="drawer-submenu">
+            <li><a href="unusual-1981.html">Unusual 1981 model</a></li>
+            <li><a href="hpf-monoshock.html">HPF monoshock</a></li>
+            <li><a href="cj-mugen.html">C&amp;J Mugen Baja Commander</a></li>
+            <li><a href="xl500s-special.html">XL500S special</a></li>
+            <li><a href="xr500-cj-mx.html">XR500 C&amp;J MX</a></li>
+            <li><a href="xr500-big-bore-591cc.html">XR500 Big Bore 591cc</a></li>
+            <li><a href="xr500r-1984-stock.html">XR500R 1984 stock</a></li>
+          </ul>
+        </li>
+
         <li><a href="baja-250.html">Baja 250</a></li>
-        <li><a href="cj-mugen.html">C&amp;J Mugen Baja Commander</a></li>
-        <li><a href="xl500s-special.html">XL500S special</a></li>
-        <li><a href="xr500-cj-mx.html">XR500 C&amp;J MX</a></li>
-        <li><a href="xr500-big-bore-591cc.html">XR500 Big Bore 591cc</a></li>
-        <li><a href="xr500r-1984-stock.html">XR500R 1984 stock</a></li>
 
         <li class="drawer-group">
           <button type="button" class="drawer-sub-toggle">
@@ -64,6 +74,7 @@
           </ul>
         </li>
 
+        <li><a href="shop.html">Shop / Items for sale</a></li>
         <li><a href="wonderful-people.html">The wonderful people</a></li>
         <li><a href="contacts.html">Contacts and share</a></li>
       </ul>
