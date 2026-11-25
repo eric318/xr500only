@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop / Items for Sale | XR500 Only</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .shop-card {
+      background-color: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .shop-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+    .shop-card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .shop-badge {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    .badge-available {
+      background-color: #2e7d32;
+      color: #ffffff;
+    }
+    .badge-sold {
+      background-color: #555555;
+      color: #cccccc;
+    }
+    .shop-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ff7a33;
+      margin: 8px 0 12px;
+    }
+    .shop-desc {
+      font-size: 0.94rem;
+      color: #d8d8d8;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+    .shop-btn {
+      display: block;
+      text-align: center;
+      background-color: #ff7a33;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    .shop-btn:hover {
+      background-color: #e6641f;
+    }
+    .shop-btn-sold {
+      display: block;
+      text-align: center;
+      background-color: #333333;
+      color: #888888;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+  <script src="nav.js"></script>
+
+  <main class="article-main">
+    <h1>Shop / Items for Sale</h1>
+    <p class="hero-subtitle" style="text-align: center; margin-bottom: 24px;">
+      Spare Honda XR500 parts, projects, and vintage bits from the garage
+    </p>
+
+    <section class="article-intro" style="text-align: center; margin-bottom: 36px;">
+      <p>
+        Click <strong>Inquire to Buy</strong> on any available item to send me an email with your shipping ZIP/country. I will reply with a shipping quote and payment options (PayPal, Venmo, or Zelle).
+      </p>
+    </section>
+
+    <section class="three-col-grid" style="margin-bottom: 48px;">
+
+      <!-- ITEM 1 (Example Available Item) -->
+      <article class="shop-card">
+        <img src="images/shop-1.jpg" alt="Item 1 photo">
+        <div class="shop-card-body">
+          <span class="shop-badge badge-available">Available</span>
+          <h3>1981–82 XR500R Cylinder Head</h3>
+          <div class="shop-price">$175 + shipping</div>
+          <p class="shop-desc">
+            Clean used OEM head, soda blasted, good threads and valve seats. Ready for your build.
+          </p>
+          <!-- Replace YOUR_EMAIL@example.com with your email address -->
+          <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%201981-82%20XR500R%20Cylinder%20Head&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%201981-82%20XR500R%20Cylinder%20Head.%20My%20shipping%20ZIP%20/%20country%20is:%20">
+            Inquire to Buy
+          </a>
+        </div>
+      </article>
+
+      <!-- ITEM 2 (Example Available Item) -->
+      <article class="shop-card">
+        <img src="images/shop-2.jpg" alt="Item 2 photo">
+        <div class="shop-card-body">
+          <span class="shop-badge badge-available">Available</span>
+          <h3>XR500 OEM Side Panels (Pair)</h3>
+          <div class="shop-price">$95 + shipping</div>
+          <p class="shop-desc">
+            Original Honda plastics, no cracks, lightly restored finish.
+          </p>
+          <!-- Replace YOUR_EMAIL@example.com with your email address -->
+          <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%20XR500%20OEM%20Side%20Panels&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%20XR500%20OEM%20Side%20Panels.%20My%20shipping%20ZIP%20/%20country%20is:%20">
+            Inquire to Buy
+          </a>
+        </div>
+      </article>
+
+      <!-- ITEM 3 (Example SOLD Item) -->
+      <article class="shop-card">
+        <img src="images/shop-3.jpg" alt="Item 3 photo">
+        <div class="shop-card-body">
+          <span class="shop-badge badge-sold">Sold</span>
+          <h3>Mikuni VM38 Carburetor</h3>
+          <div class="shop-price">$140</div>
+          <p class="shop-desc">
+            Jet-tuned for XR500, includes throttle cable and intake boot.
+          </p>
+          <span class="shop-btn-sold">Sold</span>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="band-orange" style="text-align: center;">
+      <h2 style="color: #ffffff; margin-bottom: 12px;">Looking for a specific XR500 part?</h2>
+      <p style="color: #ffffff; margin: 0;">
+        I have a lot more bits in boxes than what is listed here.
+        <!-- Replace YOUR_EMAIL@example.com with your email address -->
+        <a href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Parts%20Request" style="color: #ffffff; text-decoration: underline; font-weight: 700;">Send me a message</a>
+        and let me know what you need.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy;2026 by XR500 Only
+  </footer>
+
+</body>
+</html>
