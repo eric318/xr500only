@@ -27,6 +27,13 @@
       flex-direction: column;
       flex-grow: 1;
     }
+    .shop-card-title {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .shop-card-title:hover {
+      color: #ff7a33;
+    }
     .shop-badge {
       display: inline-block;
       align-self: flex-start;
@@ -58,6 +65,11 @@
       margin-bottom: 18px;
       flex-grow: 1;
     }
+    .shop-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
     .shop-btn {
       display: block;
       text-align: center;
@@ -71,6 +83,22 @@
     }
     .shop-btn:hover {
       background-color: #e6641f;
+    }
+    .shop-btn-secondary {
+      display: block;
+      text-align: center;
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #666;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 9px 16px;
+      border-radius: 4px;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .shop-btn-secondary:hover {
+      border-color: #ff7a33;
+      color: #ff7a33;
     }
     .shop-btn-sold {
       display: block;
@@ -97,76 +125,59 @@
 
     <section class="article-intro" style="text-align: center; margin-bottom: 36px;">
       <p>
-        Click <strong>Inquire to Buy</strong> on any available item to send me an email with your shipping ZIP/country. I will reply with a shipping quote and payment options (PayPal, Venmo, or Zelle).
+        Click <strong>More Info &amp; Photos</strong> for full details, or <strong>Inquire to Buy</strong> to email me with your shipping ZIP/country for a quote.
       </p>
     </section>
 
     <section class="three-col-grid" style="margin-bottom: 48px;">
 
-      <!-- ITEM 1 (Example Available Item) -->
+      <!-- ITEM 1 -->
       <article class="shop-card">
-        <img src="images/shop-1.jpg" alt="Item 1 photo">
+        <a href="shop-item-1.html">
+          <img src="images/shop-1.jpg" alt="1981-82 XR500R Cylinder Head">
+        </a>
         <div class="shop-card-body">
           <span class="shop-badge badge-available">Available</span>
-          <h3>1981–82 XR500R Cylinder Head</h3>
+          <h3><a href="shop-item-1.html" class="shop-card-title">1981–82 XR500R Cylinder Head</a></h3>
           <div class="shop-price">$175 + shipping</div>
           <p class="shop-desc">
             Clean used OEM head, soda blasted, good threads and valve seats. Ready for your build.
           </p>
-          <!-- Replace YOUR_EMAIL@example.com with your email address -->
-          <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%201981-82%20XR500R%20Cylinder%20Head&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%201981-82%20XR500R%20Cylinder%20Head.%20My%20shipping%20ZIP%20/%20country%20is:%20">
-            Inquire to Buy
-          </a>
+          <div class="shop-actions">
+            <a class="shop-btn-secondary" href="shop-item-1.html">More Info &amp; Photos</a>
+            <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%201981-82%20XR500R%20Cylinder%20Head&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%201981-82%20XR500R%20Cylinder%20Head.%20My%20shipping%20ZIP%20/%20country%20is:%20">
+              Inquire to Buy
+            </a>
+          </div>
         </div>
       </article>
 
-      <!-- ITEM 2 (Example Available Item) -->
+      <!-- ITEM 2 -->
       <article class="shop-card">
-        <img src="images/shop-2.jpg" alt="Item 2 photo">
+        <a href="shop-item-2.html">
+          <img src="images/shop-2.jpg" alt="XR500 OEM Side Panels">
+        </a>
         <div class="shop-card-body">
           <span class="shop-badge badge-available">Available</span>
-          <h3>XR500 OEM Side Panels (Pair)</h3>
+          <h3><a href="shop-item-2.html" class="shop-card-title">XR500 OEM Side Panels (Pair)</a></h3>
           <div class="shop-price">$95 + shipping</div>
           <p class="shop-desc">
             Original Honda plastics, no cracks, lightly restored finish.
           </p>
-          <!-- Replace YOUR_EMAIL@example.com with your email address -->
-          <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%20XR500%20OEM%20Side%20Panels&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%20XR500%20OEM%20Side%20Panels.%20My%20shipping%20ZIP%20/%20country%20is:%20">
-            Inquire to Buy
-          </a>
+          <div class="shop-actions">
+            <a class="shop-btn-secondary" href="shop-item-2.html">More Info &amp; Photos</a>
+            <a class="shop-btn" href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Only%20Shop%20Inquiry:%20XR500%20OEM%20Side%20Panels&amp;body=Hi%20Eric,%0A%0AI%20am%20interested%20in%20the%20XR500%20OEM%20Side%20Panels.%20My%20shipping%20ZIP%20/%20country%20is:%20">
+              Inquire to Buy
+            </a>
+          </div>
         </div>
       </article>
 
-      <!-- ITEM 3 (Example SOLD Item) -->
+      <!-- ITEM 3 (SOLD) -->
       <article class="shop-card">
-        <img src="images/shop-3.jpg" alt="Item 3 photo">
+        <a href="shop-item-3.html">
+          <img src="images/shop-3.jpg" alt="Mikuni VM38 Carburetor">
+        </a>
         <div class="shop-card-body">
           <span class="shop-badge badge-sold">Sold</span>
-          <h3>Mikuni VM38 Carburetor</h3>
-          <div class="shop-price">$140</div>
-          <p class="shop-desc">
-            Jet-tuned for XR500, includes throttle cable and intake boot.
-          </p>
-          <span class="shop-btn-sold">Sold</span>
-        </div>
-      </article>
-
-    </section>
-
-    <section class="band-orange" style="text-align: center;">
-      <h2 style="color: #ffffff; margin-bottom: 12px;">Looking for a specific XR500 part?</h2>
-      <p style="color: #ffffff; margin: 0;">
-        I have a lot more bits in boxes than what is listed here.
-        <!-- Replace YOUR_EMAIL@example.com with your email address -->
-        <a href="mailto:YOUR_EMAIL@example.com?subject=XR500%20Parts%20Request" style="color: #ffffff; text-decoration: underline; font-weight: 700;">Send me a message</a>
-        and let me know what you need.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    &copy;2026 by XR500 Only
-  </footer>
-
-</body>
-</html>
+          <h3><a href="shop-item-3.html" class="shop-card-title">Mikuni VM38 Carb
