@@ -70,7 +70,7 @@
             <li><a href="mikuni-38mm.html">Mikuni 38mm</a></li>
             <li><a href="electric-start-conversion.html">Electric start conversion</a></li>
             <li><a href="12-volts-conversion.html">12 Volts conversion</a></li>
-            <li><a href="mod-4.html">Modification 4</a></li>
+            <li><a href="sweet-symphonies.html">Sweet symphonies</a></li>
           </ul>
         </li>
 
